@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Rocks/Medium-Rock.tscn" type="PackedScene" id=1]
+
+[node name="Rock-Floor" type="Node2D"]
+
+[node name="Medium-rock" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 1133 )
+
+[node name="Medium-rock2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 200, 1132 )
+
+[node name="Medium-rock3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 325, 1135 )
+
+[node name="Medium-rock4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 450, 1135 )
+
+[node name="Medium-rock5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 575, 1135 )
+
+[node name="Medium-rock6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 575, 1135 )
+
+[node name="Medium-rock7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 700, 1135 )
+
+[node name="Medium-rock8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 825, 1135 )
+
+[node name="Medium-rock9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 950, 1135 )
+
+[node name="Medium-rock10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1075, 1135 )
+
+[node name="Medium-rock11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1200, 1135 )
+
+[node name="Medium-rock12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1325, 1135 )
+
+[node name="Medium-rock13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1450, 1135 )
+
+[node name="Medium-rock14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1575, 1135 )
+
+[node name="Medium-rock15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1700, 1135 )
+
+[node name="Medium-rock16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1825, 1135 )
+
+[node name="Medium-rock17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1950, 1135 )
