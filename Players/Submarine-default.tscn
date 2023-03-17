@@ -1,16 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Players/submarine.svg" type="Texture" id=1]
 [ext_resource path="res://Players/Submarine.gd" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 20 )
-
 [node name="Submarine" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="Collision-Submarine" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -32, 4, -32, 15, -22, 21, -16, 14, 26, 14, 33, 7, 32, 0, 27, -5, 17, -5, 11, -21, 3, -21, 1, -14, -4, -14, -8, -6, -15, -5, -20, -14, -32, -7 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

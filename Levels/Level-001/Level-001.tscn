@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Backgrounds/Ocean-background.webp" type="Texture" id=1]
+[ext_resource path="res://Assets/Rocks/Big-Rock.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Components/map-limit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Rocks/Rock-floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/Level-001/Scenario/rocks-level-001.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Players/Submarine-default.tscn" type="PackedScene" id=6]
+
+[node name="Level-001" type="Node2D"]
+
+[node name="Ocean-Background" type="Sprite" parent="."]
+position = Vector2( 567, 855 )
+texture = ExtResource( 1 )
+offset = Vector2( 393, -315 )
+
+[node name="Map-Rocks" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1, -2 )
+
+[node name="Big-rock" parent="." instance=ExtResource( 2 )]
+position = Vector2( -200, 80 )
+
+[node name="Big-rock2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -213, 527 )
+rotation = 3.11541
+
+[node name="Big-rock3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -43, 870 )
+rotation = -0.0523598
+
+[node name="Big-rock4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2058, 922 )
+rotation = -0.0523598
+
+[node name="Big-rock5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2074, 670 )
+rotation = 2.92866
+
+[node name="Big-rock6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1971, 148 )
+rotation = -1.20602
+scale = Vector2( 1, 1 )
+
+[node name="Rock-Floor" parent="." instance=ExtResource( 4 )]
+
+[node name="Map-Limits" parent="." instance=ExtResource( 3 )]
+
+[node name="Submarine" parent="." instance=ExtResource( 6 )]
+position = Vector2( 257, 223 )

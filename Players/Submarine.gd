@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 175
+var speed = 95
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
@@ -13,8 +13,10 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		direction.x += 1
+		$Sprite.flip_h = false
 		
 	if Input.is_action_pressed("ui_left"):
 		direction.x -= 1
+		$Sprite.flip_h = true
 		
 	move_and_slide(direction * speed)

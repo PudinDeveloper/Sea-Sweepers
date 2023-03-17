@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Trash/Trash.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Trash" type="Sprite" parent="."]
+position = Vector2( 767, 767 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash2" type="Sprite" parent="."]
+position = Vector2( 1197, 1026 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash3" type="Sprite" parent="."]
+position = Vector2( 444, 179 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash4" type="Sprite" parent="."]
+position = Vector2( 1882, 191 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash5" type="Sprite" parent="."]
+position = Vector2( 1414, 431 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash6" type="Sprite" parent="."]
+position = Vector2( 1478, 1011 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash7" type="Sprite" parent="."]
+position = Vector2( 1767, 756 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash8" type="Sprite" parent="."]
+position = Vector2( 1180, 148 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash9" type="Sprite" parent="."]
+position = Vector2( 548, 648 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )
+
+[node name="Trash10" type="Sprite" parent="."]
+position = Vector2( 214, 1020 )
+scale = Vector2( 0.0892857, 0.0793036 )
+texture = ExtResource( 1 )
+offset = Vector2( -918.399, -857.464 )

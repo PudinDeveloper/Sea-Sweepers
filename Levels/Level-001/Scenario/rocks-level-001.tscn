@@ -1,0 +1,172 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Rocks/Rock.tscn" type="PackedScene" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Rock" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1264, 994 )
+rotation = 0.436332
+
+[node name="Rock2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1264, 927 )
+rotation = -1.89717
+
+[node name="Rock3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1252, 860 )
+rotation = 2.40332
+
+[node name="Rock4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1262, 793 )
+rotation = 3.16952
+
+[node name="Rock5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1282, 732 )
+rotation = -1.31074
+
+[node name="Rock6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1280, 650 )
+rotation = -2.43124
+
+[node name="Rock7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1869, 490 )
+rotation = -2.94961
+
+[node name="Rock8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1792, 498 )
+rotation = -1.35088
+
+[node name="Rock9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1719, 526 )
+rotation = 1.67726
+
+[node name="Rock10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1646, 548 )
+rotation = -0.87441
+
+[node name="Rock11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1578, 579 )
+rotation = 3.46273
+
+[node name="Rock12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1558, 658 )
+rotation = -1.63886
+
+[node name="Rock13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1543, 744 )
+rotation = -1.53065
+
+[node name="Rock14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1535, 819 )
+rotation = 2.27242
+
+[node name="Rock15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1045, 608 )
+rotation = -0.825541
+
+[node name="Rock16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1045, 546 )
+rotation = 0.464258
+
+[node name="Rock17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1008, 494 )
+rotation = -2.29511
+
+[node name="Rock18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 962, 454 )
+
+[node name="Rock19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 880, 452 )
+rotation = -1.85703
+
+[node name="Rock20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 781, 509 )
+rotation = -0.178024
+
+[node name="Rock21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 749, 584 )
+rotation = -1.1013
+
+[node name="Rock22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 733, 646 )
+rotation = 3.05956
+
+[node name="Rock23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 813, 466 )
+rotation = -2.94961
+
+[node name="Rock25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 704, 703 )
+rotation = -1.72962
+
+[node name="Rock26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 631, 707 )
+rotation = 4.3703
+
+[node name="Rock27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 555, 689 )
+rotation = -0.856957
+
+[node name="Rock28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1236, 203 )
+rotation = -1.79769
+
+[node name="Rock29" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1297, 231 )
+rotation = -4.59022
+
+[node name="Rock30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1367, 270 )
+rotation = -1.96699
+
+[node name="Rock31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1430, 234 )
+rotation = -2.56214
+
+[node name="Rock32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1516, 215 )
+rotation = -3.49589
+
+[node name="Rock33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1575, 253 )
+rotation = 1.53065
+
+[node name="Rock34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1613, 303 )
+rotation = -1.20253
+
+[node name="Rock35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 746, 406 )
+
+[node name="Rock36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 669, 374 )
+
+[node name="Rock37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 599, 426 )
+
+[node name="Rock38" parent="." instance=ExtResource( 1 )]
+position = Vector2( 548, 463 )
+
+[node name="Rock39" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1350, 346 )
+rotation = -2.07694
+
+[node name="Rock40" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1355, 408 )
+rotation = -3.49589
+
+[node name="Rock41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 661, 312 )
+rotation = 3.49589
+
+[node name="Rock42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 652, 214 )
+rotation = -1.20253
+
+[node name="Rock43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 659, 137 )
+rotation = -2.36318
+
+[node name="Rock44" parent="." instance=ExtResource( 1 )]
+position = Vector2( 627, 49 )
+rotation = -1.20253
