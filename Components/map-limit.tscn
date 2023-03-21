@@ -1,33 +1,33 @@
 [gd_scene load_steps=3 format=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 20, 540 )
+extents = Vector2( 5, 540 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 960, 20 )
+extents = Vector2( 960, 5 )
 
 [node name="Map-Limit" type="Node2D"]
 
 [node name="Wall-Right" type="StaticBody2D" parent="."]
 
 [node name="Collision-Wall" type="CollisionShape2D" parent="Wall-Right"]
-position = Vector2( 1900, 540 )
+position = Vector2( 1915, 540 )
 shape = SubResource( 1 )
 
 [node name="Wall-Left" type="StaticBody2D" parent="."]
 
 [node name="Collision-Wall" type="CollisionShape2D" parent="Wall-Left"]
-position = Vector2( 20, 540 )
+position = Vector2( 5, 540 )
 shape = SubResource( 1 )
 
 [node name="Wall-Up" type="StaticBody2D" parent="."]
 
 [node name="Collision-Roof" type="CollisionShape2D" parent="Wall-Up"]
-position = Vector2( 960, 20 )
+position = Vector2( 960, 5 )
 shape = SubResource( 2 )
 
 [node name="Wall-Down" type="StaticBody2D" parent="."]
 
 [node name="Collision-Floor" type="CollisionShape2D" parent="Wall-Down"]
-position = Vector2( 960, 1060 )
+position = Vector2( 960, 1075 )
 shape = SubResource( 2 )

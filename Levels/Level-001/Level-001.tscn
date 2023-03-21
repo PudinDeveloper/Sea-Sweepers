@@ -39,11 +39,10 @@ rotation = 2.92866
 [node name="Big-rock6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1971, 148 )
 rotation = -1.20602
-scale = Vector2( 1, 1 )
 
 [node name="Rock-Floor" parent="." instance=ExtResource( 4 )]
 
 [node name="Map-Limits" parent="." instance=ExtResource( 3 )]
 
 [node name="Submarine" parent="." instance=ExtResource( 6 )]
-position = Vector2( 257, 223 )
+position = Vector2( 315, 222 )

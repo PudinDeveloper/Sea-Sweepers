@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 95
+var speed = 115
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
