@@ -1,49 +1,133 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Components/Background/Ocean-Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Rocks/Big-Rock.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Components/map-limit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Components/Map/map-limit.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Rocks/Rock-floor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Level-001/Scenario/rocks-level-001.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Players/Submarine-default.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Players/Submarine.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Music/luma_pools.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Components/Enemies/BlowFish.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Components/Coins/Coin-1.tscn" type="PackedScene" id=9]
 
 [node name="Level-001" type="Node2D"]
 
 [node name="Ocean-Background" parent="." instance=ExtResource( 1 )]
 
-[node name="Map-Rocks" parent="." instance=ExtResource( 5 )]
+[node name="Rocks" type="Node2D" parent="."]
+
+[node name="Map-Rocks" parent="Rocks" instance=ExtResource( 5 )]
 position = Vector2( 1, -2 )
 
-[node name="Big-rock" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( -200, 80 )
 
-[node name="Big-rock2" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock2" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( -213, 527 )
 rotation = 3.11541
 
-[node name="Big-rock3" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock3" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( -43, 870 )
 rotation = -0.0523598
 
-[node name="Big-rock4" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock4" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( 2058, 922 )
 rotation = -0.0523598
 
-[node name="Big-rock5" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock5" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( 2074, 670 )
 rotation = 2.92866
 
-[node name="Big-rock6" parent="." instance=ExtResource( 2 )]
+[node name="Big-rock6" parent="Rocks" instance=ExtResource( 2 )]
 position = Vector2( 1971, 148 )
 rotation = -1.20602
 
-[node name="Rock-Floor" parent="." instance=ExtResource( 4 )]
+[node name="Rock-Floor" parent="Rocks" instance=ExtResource( 4 )]
+
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2( 413, 186 )
+
+[node name="BlowFish" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 510, 670 )
+
+[node name="BlowFish2" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1058, 118 )
+
+[node name="BlowFish3" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1318, 73 )
+
+[node name="BlowFish4" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 315, 857 )
+
+[node name="BlowFish5" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( -134, 823 )
+
+[node name="BlowFish6" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( -350, 381 )
+
+[node name="BlowFish7" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 108, 116 )
+
+[node name="BlowFish8" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 448, -77 )
+
+[node name="BlowFish9" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 968, 798 )
+
+[node name="BlowFish10" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1305, 551 )
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 304, 469 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 611, 574 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 372, 818 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 731, 894 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1659, 951 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 910, 642 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1104, 752 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1497, 449 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1214, 483 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1420, 660 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 848, 287 )
+
+[node name="Coin12" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1066, 119 )
+
+[node name="Coin13" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1378, 67 )
+
+[node name="Coin14" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1728, 390 )
+
+[node name="Coin15" parent="Coins" instance=ExtResource( 9 )]
+position = Vector2( 1652, 137 )
 
 [node name="Map-Limits" parent="." instance=ExtResource( 3 )]
 
 [node name="Submarine" parent="." instance=ExtResource( 6 )]
-position = Vector2( 321, 178 )
+position = Vector2( 237, 172 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )

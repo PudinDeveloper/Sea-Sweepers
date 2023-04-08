@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Players/Submarine-default.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Players/Submarine.tscn" type="PackedScene" id=1]
 [ext_resource path="res://tilset-1.tres" type="TileSet" id=2]
 [ext_resource path="res://Assets/Backgrounds/Ocean-background.webp" type="Texture" id=3]
-[ext_resource path="res://Components/map-limit.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Components/Map/map-limit.tscn" type="PackedScene" id=4]
 
 [node name="Level-002" type="Node2D"]
 

@@ -4,8 +4,8 @@
 
 [node name="Big-rock" type="StaticBody2D"]
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( 88, 305, 232, 253, 266, 207, 280, 177, 281, 97, 261, 41, 255, -1, 256, -50, 109, -284, 94, -295, 68, -293, -14, -272, -111, -174, -220, -104, -240, -73, -295, 39, -302, 76, -300, 110, -237, 242, -217, 259 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

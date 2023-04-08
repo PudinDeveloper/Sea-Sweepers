@@ -22,3 +22,7 @@ func _on_RespawnButton_pressed():
 
 func _on_ExitGame_pressed():
 	get_tree().quit()
+
+
+func _on_MainMenu_pressed():
+	get_tree().change_scene("res://Screens/MainMenu/main_menu.tscn")

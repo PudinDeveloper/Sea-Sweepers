@@ -4,8 +4,8 @@
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -66, 22, -49, 56, 20, 67, 52, 56, 61, 41, 61, 17, 55, 3, 56, -10, 22, -63, 15, -64, -3, -59, -27, -35, -46, -24, -57, -7 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

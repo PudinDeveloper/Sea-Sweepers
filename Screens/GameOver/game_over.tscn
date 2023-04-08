@@ -71,4 +71,5 @@ stream = ExtResource( 1 )
 autoplay = true
 
 [connection signal="pressed" from="VBox-GameOver/RespawnButton" to="." method="_on_RespawnButton_pressed"]
+[connection signal="pressed" from="VBox-GameOver/MainMenu" to="." method="_on_MainMenu_pressed"]
 [connection signal="pressed" from="VBox-GameOver/ExitGame" to="." method="_on_ExitGame_pressed"]
