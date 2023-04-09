@@ -20,8 +20,3 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 		
 	move_and_slide(direction * speed)
-
-func _on_DetectorCollision_body_entered(body):
-	pass
-	#if body.name == "BlowFish":
-	#	get_tree().reload_current_scene()

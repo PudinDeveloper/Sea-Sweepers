@@ -21,7 +21,7 @@ func _on_RespawnButton_pressed():
 
 
 func _on_ExitGame_pressed():
-	get_tree().quit()
+	get_tree().change_scene("res://Screens/CloseApp/close_app.tscn")
 
 
 func _on_MainMenu_pressed():

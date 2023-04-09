@@ -12,7 +12,7 @@ script = ExtResource( 3 )
 [node name="CoinCollision" type="CollisionPolygon2D" parent="Coin2D"]
 polygon = PoolVector2Array( -40, 29, 43, 29, 43, 0, 0, -47, -47, 0, -47, 29 )
 
-[node name="Sprite" type="Sprite" parent="Coin2D"]
+[node name="TrashSprite" type="Sprite" parent="Coin2D"]
 position = Vector2( 1, -6 )
 scale = Vector2( 0.174539, 0.174539 )
 texture = ExtResource( 1 )
