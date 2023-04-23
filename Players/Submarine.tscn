@@ -16,6 +16,31 @@ collision_layer = 9
 collision_mask = 9
 script = ExtResource( 2 )
 
+[node name="Paredes" type="StaticBody2D" parent="."]
+scale = Vector2( 1.02881, 0.997824 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="Arriba" type="CollisionShape2D" parent="Paredes"]
+position = Vector2( 375.191, -97.2115 )
+scale = Vector2( -2058.23, 6.41273 )
+shape = SubResource( 1 )
+
+[node name="Abajo" type="CollisionShape2D" parent="Paredes"]
+position = Vector2( 397.547, 570.241 )
+scale = Vector2( -353.386, -10.985 )
+shape = SubResource( 2 )
+
+[node name="Izquierda" type="CollisionShape2D" parent="Paredes"]
+position = Vector2( -38.8799, 244.532 )
+scale = Vector2( 7.69085, 294.939 )
+shape = SubResource( 3 )
+
+[node name="Derecha" type="CollisionShape2D" parent="Paredes"]
+position = Vector2( 872.85, 246.537 )
+scale = Vector2( -8.98815, -651.833 )
+shape = SubResource( 3 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 current = true
@@ -27,31 +52,6 @@ limit_bottom = 1080
 smoothing_enabled = true
 smoothing_speed = 9.0
 editor_draw_limits = true
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Camera2D"]
-scale = Vector2( 1.02881, 0.997824 )
-collision_layer = 2
-collision_mask = 2
-
-[node name="Arriba" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( 375.191, -97.2115 )
-scale = Vector2( -2058.23, 6.41273 )
-shape = SubResource( 1 )
-
-[node name="Abajo" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( 397.547, 570.241 )
-scale = Vector2( -353.386, -10.985 )
-shape = SubResource( 2 )
-
-[node name="Izquierda" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( -38.8799, 244.532 )
-scale = Vector2( 7.69085, 294.939 )
-shape = SubResource( 3 )
-
-[node name="Derecha" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( 872.85, 246.537 )
-scale = Vector2( -8.98815, -651.833 )
-shape = SubResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 407.4, 240 )

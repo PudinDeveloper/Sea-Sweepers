@@ -4,6 +4,7 @@ class GlobalScope:
 var globals = GlobalScope
 
 func _on_Coin2D_body_entered(body):
+	Global.trash += 1
 	$TrashSprite.queue_free()
 	$CoinCollision.queue_free()
 	$PickupTrash.play()
