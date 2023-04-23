@@ -10,7 +10,7 @@
 [node name="Map-Limit" parent="." instance=ExtResource( 4 )]
 
 [node name="Ocean-Background" type="Sprite" parent="."]
-position = Vector2( 567, 855 )
+position = Vector2( 552, 924 )
 texture = ExtResource( 3 )
 offset = Vector2( 393, -315 )
 

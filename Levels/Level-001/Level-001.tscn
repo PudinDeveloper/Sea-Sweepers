@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Components/Background/Ocean-Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Rocks/Big-Rock.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Components/Enemies/BlowFish.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Components/Coins/Coin-1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Players/Submarine-2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Components/GUI/GUI.tscn" type="PackedScene" id=11]
 
 [node name="Level-001" type="Node2D"]
 
@@ -73,10 +74,10 @@ position = Vector2( 108, 116 )
 position = Vector2( 448, -77 )
 
 [node name="BlowFish9" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 968, 798 )
+position = Vector2( 967, 799 )
 
 [node name="BlowFish10" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 1305, 551 )
+position = Vector2( 1367, 768 )
 
 [node name="Coins" type="Node2D" parent="."]
 
@@ -139,3 +140,5 @@ stream = ExtResource( 7 )
 volume_db = -10.487
 autoplay = true
 mix_target = 2
+
+[node name="GUI" parent="." instance=ExtResource( 11 )]

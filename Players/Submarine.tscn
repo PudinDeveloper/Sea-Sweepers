@@ -4,7 +4,7 @@
 [ext_resource path="res://Players/Submarine.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 28.1206, 10 )
+extents = Vector2( 28.1206, 20.312 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -31,23 +31,23 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="Arriba" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( 373.245, -38.0829 )
-scale = Vector2( 18.1988, 1.99624 )
+position = Vector2( 375.191, -97.2115 )
+scale = Vector2( -2058.23, 6.41273 )
 shape = SubResource( 1 )
 
 [node name="Abajo" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( 395.601, 530.154 )
-scale = Vector2( 85.2771, -1.57639 )
+position = Vector2( 397.547, 570.241 )
+scale = Vector2( -353.386, -10.985 )
 shape = SubResource( 2 )
 
 [node name="Izquierda" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2( -40.8237, 252.55 )
-scale = Vector2( 1.84539, 15.49 )
+position = Vector2( -38.8799, 244.532 )
+scale = Vector2( 7.69085, 294.939 )
 shape = SubResource( 3 )
 
 [node name="Derecha" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
 position = Vector2( 872.85, 246.537 )
-scale = Vector2( -1.4078, 21.7258 )
+scale = Vector2( -8.98815, -651.833 )
 shape = SubResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

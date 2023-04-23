@@ -14,6 +14,10 @@ config/name="SeaSweepers"
 run/main_scene="res://Screens/MainMenu/main_menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Components/Global.gd"
+
 [display]
 
 window/size/width=1920
