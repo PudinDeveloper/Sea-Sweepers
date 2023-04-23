@@ -16,3 +16,21 @@ func _on_StartGame_pressed():
 
 func _on_ExitGame_pressed():
 	get_tree().change_scene("res://Screens/CloseApp/close_app.tscn")
+
+
+func _on_OnePlayer_pressed():
+	Global.singleplayer = bool(true)
+	$VBoxGameOver/HBoxContainer/OnePlayer.pressed = true
+	$VBoxGameOver/HBoxContainer/TwoPlayer.pressed = false
+	# _notPressed()
+
+
+func _on_TwoPlayer_pressed():
+	Global.singleplayer = bool(false)
+	$VBoxGameOver/HBoxContainer/OnePlayer.pressed = false
+	$VBoxGameOver/HBoxContainer/TwoPlayer.pressed = true
+	# _notPressed()
+	
+func _notPressed():
+	$VBoxGameOver/HBoxContainer/OnePlayer.pressed = false
+	$VBoxGameOver/HBoxContainer/TwoPlayer.pressed = false

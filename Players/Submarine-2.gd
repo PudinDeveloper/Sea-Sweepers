@@ -21,6 +21,10 @@ func _physics_process(delta):
 			$Sprite.flip_h = true
 		
 	move_and_slide(direction * speed)
+	
+func _ready():
+	if Global.singleplayer:
+		queue_free()
 
 func desaparecerSprite():
 	Global.loser = bool(true)

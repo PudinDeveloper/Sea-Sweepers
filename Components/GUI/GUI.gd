@@ -36,3 +36,9 @@ func _beatiful_sign(trash_count):
 		return ("0" + str(Global.trash))
 	else:
 		return str(Global.trash)
+
+
+func _on_Button_pressed():
+	Global.singleplayer = true
+	Global.lifes = 3
+	get_tree().change_scene("res://Screens/MainMenu/main_menu.tscn")

@@ -8,7 +8,7 @@
 [ext_resource path="res://Assets/Images/Sea-Sweepers.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-size = 64
+size = 52
 use_filter = true
 font_data = ExtResource( 3 )
 
@@ -34,37 +34,60 @@ position = Vector2( 952, 270 )
 scale = Vector2( 2.19737, 2.18 )
 texture = ExtResource( 6 )
 
-[node name="VBox-GameOver" type="VBoxContainer" parent="."]
+[node name="VBoxGameOver" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -338.0
-margin_top = -218.0
-margin_right = 338.0
-margin_bottom = 454.0
+margin_left = -359.0
+margin_top = -242.0
+margin_right = 359.0
+margin_bottom = 430.0
 alignment = 1
 
-[node name="StartGame" type="Button" parent="VBox-GameOver"]
-margin_top = 225.0
-margin_right = 676.0
-margin_bottom = 299.0
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxGameOver"]
+margin_top = 199.0
+margin_right = 718.0
+margin_bottom = 260.0
+
+[node name="OnePlayer" type="Button" parent="VBoxGameOver/HBoxContainer"]
+margin_right = 365.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 1 )
+toggle_mode = true
+pressed = true
+action_mode = 0
+text = "Singleplayer"
+
+[node name="TwoPlayer" type="Button" parent="VBoxGameOver/HBoxContainer"]
+margin_left = 369.0
+margin_right = 718.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 1 )
+toggle_mode = true
+action_mode = 0
+text = "Multiplayer"
+
+[node name="StartGame" type="Button" parent="VBoxGameOver"]
+margin_top = 264.0
+margin_right = 718.0
+margin_bottom = 325.0
 custom_fonts/font = SubResource( 1 )
 action_mode = 0
 text = "Start Game"
 
-[node name="LevelSelector" type="Button" parent="VBox-GameOver"]
-margin_top = 303.0
-margin_right = 676.0
-margin_bottom = 373.0
+[node name="LevelSelector" type="Button" parent="VBoxGameOver"]
+margin_top = 329.0
+margin_right = 718.0
+margin_bottom = 399.0
 custom_fonts/font = SubResource( 2 )
 disabled = true
 text = "Level Selector"
 
-[node name="ExitGame" type="Button" parent="VBox-GameOver"]
-margin_top = 377.0
-margin_right = 676.0
-margin_bottom = 447.0
+[node name="ExitGame" type="Button" parent="VBoxGameOver"]
+margin_top = 403.0
+margin_right = 718.0
+margin_bottom = 473.0
 custom_fonts/font = SubResource( 3 )
 text = "Exit Game"
 
@@ -77,5 +100,8 @@ position = Vector2( 952, 958 )
 scale = Vector2( 0.756097, 0.756098 )
 texture = ExtResource( 1 )
 
-[connection signal="pressed" from="VBox-GameOver/StartGame" to="." method="_on_StartGame_pressed"]
-[connection signal="pressed" from="VBox-GameOver/ExitGame" to="." method="_on_ExitGame_pressed"]
+[connection signal="pressed" from="VBoxGameOver/HBoxContainer/OnePlayer" to="." method="_on_OnePlayer_pressed"]
+[connection signal="ready" from="VBoxGameOver/HBoxContainer/OnePlayer" to="." method="_on_OnePlayer_ready"]
+[connection signal="pressed" from="VBoxGameOver/HBoxContainer/TwoPlayer" to="." method="_on_TwoPlayer_pressed"]
+[connection signal="pressed" from="VBoxGameOver/StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="pressed" from="VBoxGameOver/ExitGame" to="." method="_on_ExitGame_pressed"]
