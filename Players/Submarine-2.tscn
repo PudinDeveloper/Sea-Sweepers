@@ -4,17 +4,22 @@
 [ext_resource path="res://Players/Submarine-2.gd" type="Script" id=2]
 
 [node name="Submarine2" type="KinematicBody2D"]
-collision_layer = 11
-collision_mask = 11
+collision_layer = 267
+collision_mask = 267
 script = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+light_mask = 257
 polygon = PoolVector2Array( -27, -5, -10, -5, -3, -13, 14, -13, 31, 2, 31, 9, 26, 13, -27, 14 )
 
 [node name="Sprite" type="Sprite" parent="."]
+light_mask = 257
 texture = ExtResource( 1 )
 
 [node name="DetectorCollision" type="Area2D" parent="."]
+collision_layer = 257
+collision_mask = 257
 
 [node name="Submarine-2" type="CollisionPolygon2D" parent="DetectorCollision"]
+light_mask = 257
 polygon = PoolVector2Array( -4, -11, 14, -11, 29, 3, 29, 9, 22, 12, -27, 12, -27, -4, -10, -4 )
