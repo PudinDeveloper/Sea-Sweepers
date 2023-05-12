@@ -39,6 +39,7 @@ func _beatiful_sign(trash_count):
 
 
 func _on_Button_pressed():
+	Global.trash = 0
 	Global.singleplayer = true
 	Global.lifes = 3
 	get_tree().change_scene("res://Screens/MainMenu/main_menu.tscn")

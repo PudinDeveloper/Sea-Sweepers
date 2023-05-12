@@ -21,6 +21,7 @@ func _physics_process(delta):
 			$Sprite.flip_h = true
 			
 		if Input.is_action_pressed("ui_esc"):
+			Global.trash = 0
 			_exitMainMenu()
 		
 	move_and_slide(direction * speed)

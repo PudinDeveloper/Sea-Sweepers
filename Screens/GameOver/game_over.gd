@@ -18,7 +18,7 @@ func _ready():
 
 func _on_RespawnButton_pressed():
 	Global.lifes = 3
-	get_tree().change_scene("res://Levels/Level-001/Level-001.tscn")
+	Global.respawn()
 
 
 func _on_ExitGame_pressed():

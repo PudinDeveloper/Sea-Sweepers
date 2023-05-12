@@ -5,14 +5,19 @@
 [ext_resource path="res://Components/Coins/Coin-1.gd" type="Script" id=3]
 
 [node name="Coin" type="Node2D"]
+light_mask = 256
 
 [node name="Coin2D" type="Area2D" parent="."]
+collision_layer = 256
+collision_mask = 256
 script = ExtResource( 3 )
 
 [node name="CoinCollision" type="CollisionPolygon2D" parent="Coin2D"]
+light_mask = 256
 polygon = PoolVector2Array( -40, 29, 43, 29, 43, 0, 0, -47, -47, 0, -47, 29 )
 
 [node name="TrashSprite" type="Sprite" parent="Coin2D"]
+light_mask = 256
 position = Vector2( 1, -6 )
 scale = Vector2( 0.174539, 0.174539 )
 texture = ExtResource( 1 )

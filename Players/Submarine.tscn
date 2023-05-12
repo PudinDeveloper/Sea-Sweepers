@@ -12,8 +12,8 @@ extents = Vector2( 28.1206, 20.312 )
 
 [node name="Submarine" type="KinematicBody2D"]
 scale = Vector2( 0.991506, 1 )
-collision_layer = 9
-collision_mask = 9
+collision_layer = 265
+collision_mask = 265
 script = ExtResource( 2 )
 
 [node name="Paredes" type="StaticBody2D" parent="."]
