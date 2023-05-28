@@ -9,9 +9,9 @@ func verificar_contador():
 		_determinateMaxLevel()
 		Global.level += 1
 		Global.trash = 0
-		if Global.level != 3: # Temporal
-			Global.respawn()
-	pass
+		get_tree().change_scene("res://Screens/LevelCompleted/LevelCompleted.tscn")
+		if Global.level != 4: # Temporal
+			pass
 
 func _process(delta):
 	verificar_contador()

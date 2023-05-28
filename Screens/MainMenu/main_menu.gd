@@ -34,3 +34,7 @@ func _on_TwoPlayer_pressed():
 func _notPressed():
 	$VBoxGameOver/HBoxContainer/OnePlayer.pressed = false
 	$VBoxGameOver/HBoxContainer/TwoPlayer.pressed = false
+
+
+func _on_OnePlayer_ready():
+	pass # Replace with function body.

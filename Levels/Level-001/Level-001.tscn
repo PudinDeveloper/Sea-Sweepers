@@ -145,7 +145,6 @@ autoplay = true
 mix_target = 2
 
 [node name="GUI" parent="." instance=ExtResource( 11 )]
-visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 13 )

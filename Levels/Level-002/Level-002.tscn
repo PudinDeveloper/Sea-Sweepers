@@ -36,7 +36,6 @@ tile_data = PoolIntArray( -262150, 26, 0, -262145, 26, 0, -327676, 26, 0, -32767
 position = Vector2( 304, 469 )
 
 [node name="Coin2" parent="Coins" instance=ExtResource( 2 )]
-visible = false
 position = Vector2( 358, 601 )
 
 [node name="Coin3" parent="Coins" instance=ExtResource( 2 )]
